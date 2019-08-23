@@ -1,0 +1,158 @@
+ @font-face{
+     font-family: "iconfont";
+     src:url(font/iconfont.svg),
+     url(font/iconfont.eot),
+     url(font/iconfont.ttf),
+     url(font/iconfont.woff2),
+     url(font/iconfont.woff);
+    }
+    div{
+     font-family: "iconfont";
+    }
+    html,body{
+     	width: 100%;
+     	height: 100%;
+     
+     }          
+     body{
+     	/*position: relative;*/
+     	width: 100%;
+     	height: 100%;
+     	display: flex;
+     	flex-direction: column;
+     }
+     #top{
+          width: 100%;
+          height:53px;
+          background: #161618;
+     }
+     header{
+        width: 100%;
+        height: 62px;
+     
+     }
+     .shouye{
+        width: 462px;
+        height: 62px;
+        /*background: red;*/
+        float: left;
+        margin-left: 25px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+     }
+     .fanhui{
+        width: 180px;
+        font-size: 28px;
+        line-height: 62px;
+        color: #373737;
+        background: url(../images/tubiao24.png) no-repeat 0 15px;
+        text-align: right;
+     }
+     .hudong{
+         height:62px;
+        position: relative;
+     }
+     .hu{
+         font-size: 32px;
+        line-height: 62px;
+        color: #3e3e3e;
+        font-weight: 600;
+     }
+     .hu:hover{
+        color: #0bbe06;
+     }
+      .heng{
+         width: 24px;
+          height: 6px;
+          border-radius: 5px;
+          background: #0bbe06;
+          position: absolute;
+          bottom: -10px;
+          left: 50%;
+          margin-left:-12px; 
+          display: none; 
+     }
+     .hudong:hover .heng{
+        display: block;
+     }
+     .shouye1{
+        float: right;
+        width: 91px;
+        height: 91px;
+        margin-right: 25px;
+     }
+     section{
+        width: 100%;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        overflow: auto;
+     }
+     .pinglun{
+        width: 100%;
+        height: 140px;
+        background: url(../images/tubiao25.png) no-repeat 0 20px;
+        padding-top: 28px;
+        text-indent: 121px;
+        margin-left: 25px;
+        flex-shrink: 0;
+        margin-top: 24px;
+     }
+    .huifu{
+        font-size: 32px;
+        line-height: 32px;
+        color:#333333;
+        margin-bottom: 28px;
+    }
+    .haimei{
+         font-size: 23px;
+        line-height: 23px;
+        color:#939393;
+    }
+     footer{
+        width: 100%;
+        height: 98px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+     }
+     .kandian{
+        width: 52px;
+        height: 98px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+     }
+     .jinquan{
+        font-size: 19px;
+        line-height: 19px;
+        color: #333;
+        margin-top: 10px;
+     }
+     .jinquan:hover{
+        color: #15c852;
+     }
+     .jia{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background: #16c957;
+        font-size: 43px;
+        line-height: 100px;
+        font-weight: bold;
+        color: #fff;
+        position: absolute;
+        bottom: 36px;
+        left: 50%;
+        margin-left: -50px;
+        text-align: center;
+     }
+     .jinquan1{
+        margin-top: 60px;
+     }

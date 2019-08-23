@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html,body{
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+         #box{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+
+
+        }
+         #box .yi{
+            display: block;
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+            position: relative;
+            transition: 5s;
+            
+        }
+        #box .yi:hover{
+            transform: scale(1.2)
+        }
+        .dian{
+            width: 20px;
+            height: 20px;
+            background: #fff;
+            opacity: 0.5;
+            border-radius: 50%;
+            margin-bottom: 40px;
+        }
+        .dianhe{
+            position: fixed;
+            top: 40%;
+            right: 7%;
+        }
+       .pbox{
+           width: 1000px;
+           height:500px;
+           position: absolute;
+           top: 50%;
+           margin-top: -250px;
+           left: 50%;
+           margin-left: -500px;
+           background-color: rgba(fff, fff, fff, 0.2);
+           border: 2px solid gray;
+       }
+       .pbox{
+           width: 1000px;
+           height:500px;
+           position: absolute;
+           bottom: 50%;
+           margin-bottom: -250px;
+           left: 50%;
+           margin-left: -500px;
+           background-color: rgba(fff, fff, fff, 0.2);
+           border: 2px solid gray;
+       }
+       .img1{
+            width: 200px;
+            height: 50px;
+            position: absolute;
+            top: 10%;
+            left: 7%;
+            opacity: 1;
+       }
+       #tu1{
+           position: absolute;
+            top: 900px;
+            left: 15%;
+            width: 450px;
+            height: 140px;
+       }
+       #tu2{
+           width: 200px;
+           height: 80px;
+           position: absolute;
+           top: 450px;
+           left: 22%;
+           opacity: 0;
+           transition: 3s;
+       }
+       
+    </style>
+
+</head>
+<body>
+    <div id="box">
+        <img src="../images/da2.png" alt="" class="yi">
+        <img src="../images/da5.png" alt="" class="yi">
+        <div class="pbox">
+            <img src="../images/log.png" alt="" class="img1">
+        </div>
+        <img src="../images/b1.png" alt="" id="tu1">
+        <img src="../images/b3.png" alt="" id="tu2">
+
+        
+    </div>
+    
+    <div class="dianhe">
+        <div class="dian dian1"></div>
+        <div class="dian dian2"></div>
+    </div>
+<script>
+    
+    var box=document.getElementById('box');
+    var tops=document.documentElement.scrollTop;
+    var stop= document.body.clientHeight;
+    var tu1=document.getElementById('tu1')
+    var tu2 = document.getElementById('tu2')
+
+    function move(){
+        var timer=setInterval(function(){
+            
+            box.style.top = box.offsetTop- 30 + 'px'
+            if (parseInt(box.style.top) <= -stop) {
+                box.style.top = -stop
+                clearInterval(timer)
+            }
+        },60)        
+    }
+    setTimeout(function(){
+        var timer=setInterval(function(){
+            
+            tu1.style.top = tu1.offsetTop- 5 + 'px'
+            if (parseInt(tu1.style.top) <= 250) {
+                tu1.style.top = 250
+                clearInterval(timer)
+            }
+        },10)        
+    },1000)
+    
+    setTimeout(function () {
+            var timer = setInterval(function () {
+
+                // tu2.style.top = tu2.offsetTop - 5 + 'px'
+                tu2.style.opacity = 1
+                // if (parseInt(tu2.style.top) <= 550) {
+                //     tu2.style.top = 550
+                //     clearInterval(timer)
+                // }
+            }, 10)
+        }, 2200)
+
+    var dian2=document.querySelector('.dian2');
+    dian2.onclick=()=>{
+        move();
+    }
+    
+    var dian1= document.querySelector('.dian1');
+    dian1.onclick=()=>{
+        var timer = setInterval(function () {
+
+            box.style.top = box.offsetTop + 30 + 'px'
+            if (parseInt(box.style.top) >= 0) {
+                box.style.top = 0
+                clearInterval(timer)
+            }
+        }, 60)       
+    }
+
+
+   
+    
+
+</script>
+        
+    
+</body>
+</html>

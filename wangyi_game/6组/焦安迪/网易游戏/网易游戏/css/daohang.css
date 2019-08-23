@@ -1,0 +1,109 @@
+html,body{
+	width: 100%;
+	height: 100%;
+}
+
+top{
+ width: 100%;
+ height: 40px;
+}
+header{
+width: 100%;
+height: 88px;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+background: #161618;
+}
+.fanhui{
+	width: 19px;
+	height: 32px;
+
+}
+.daohang{
+	font-size: 34px;
+	color: #fff;
+	line-height: 34px;
+}
+.bianji{
+	font-size: 34px;
+	color: #cccccc;
+	line-height: 34px;
+}
+section{
+width: 100%;
+flex-grow: 1;
+display: flex;
+flex-direction: column;
+/*justify-content: space-around;
+align-content: flex-start;
+flex-shrink: 0;
+flex-wrap: wrap;*/
+}
+.changyongpindao{
+	width: 100%;
+	height: 50px;
+	background: #f2f2f2;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+.cypd{
+	font-size: 22px;
+	color: #999999;
+	line-height: 22px;
+}
+.dianji{
+	font-size: 20px;
+	color: #999999;
+	line-height: 20px;
+}
+.pindao{
+	width: 100%;
+	height: 362px;
+	border-bottom: 1px solid #e6e6e6;
+	display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content:space-around;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+}
+.pindao1{
+	width: 114px;
+	height: 123px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 34px;
+}
+.tubiao13{
+	width: 91px;
+	height: 45px;
+}
+.yanyuan{
+	font-size: 26px;
+	color: #666666;
+	line-height: 26px;
+}
+footer{
+width: 100%;
+height: 69px;
+
+}
+.qita{
+	width: 100%;
+	height: 50px;
+	font-size: 23px;
+	line-height: 50px;
+	text-indent: 31px;
+	color: #9d9d9d;
+	float: left;
+	padding-left: 31px;
+	background: #f2f2f2;
+
+}
+

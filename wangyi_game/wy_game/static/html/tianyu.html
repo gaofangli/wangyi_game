@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>天谕</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+    <script src="https://cdn.bootcss.com/vue-router/3.0.7/vue-router.js"></script>
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+    <link rel="stylesheet" href="../css/ty.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="icon" href="../images/favicon.ico">
+    <script src="../js/jquery-1.12.2.min.js"></script>
+    <script src="../js/ty.js"></script>
+
+</head>
+
+<body>
+    <div id="app">
+        <my-a></my-a>
+    </div>
+    <template id="aaa">
+        <div class="ty_game">
+            <div class="ty_top">
+                <div class="game_path">
+                    <span class="game_path_menu">&#xe649;</span><span> 游戏全目录</span>
+                </div>
+                <a href="#"> <img src="https://nie.res.netease.com/comm/nie.topBar/images/logo_b5525b7.png" alt=""></a>
+            </div>
+            <div class="game_bg">
+                <img src="https://tym.res.netease.com/pc/gw/20190731141011/img/bg_fe4d91ab.jpg" alt="">
+            </div>
+            <div class="arousel">
+                <el-carousel :interval="4000" type="card" height="800px">
+                    <el-carousel-item v-for="item in img_url" :key="item">
+                        <div class="gallery_item">
+                            <img :src="item" alt="">
+                        </div>
+                    </el-carousel-item>
+                </el-carousel>
+            </div>
+            <div class="footer">
+                <div class="w footer-main">
+                    <div class="footer-main-txt">
+                        <div class="footer-main-top">
+                            <div class="footer-main-topfl fl">
+                                <a class="wangyi" href="">
+                                    <img src=" https://nie.res.netease.com/comm/NIE_copyRight/images/netease.2.png"
+                                        class="img1" alt="">
+                                </a>
+                                <a class="wangyigame" href="">
+                                    <img src="https://nie.res.netease.com/comm/NIE_copyRight/images/nie.2.png"
+                                        class="img1" alt="">
+                                </a>
+                                <a class="wangyigame" width="30px" heigth="30px" href="">
+                                    <img src=" https://nie.res.netease.com/comm/NIE_copyRight/images/leihuo.1.png"
+                                        width="30px" heigth="30px" alt="">
+                                </a>
+                                <a class="wangyigame" href="" width="30px" heigth="30px" style="padding-left: 10px;">
+                                    <img src="https://nie.res.netease.com/comm/NIE_copyRight/images/fuxi.1.png"
+                                        width="30px" heigth="30px" alt="">
+                                </a>
+                            </div>
+                            <div class="footer-main-topfr ">
+                                <div class="footer-main-top1">
+                                    <a href="">公司简介-</a>
+                                    <a href="">客户服务-</a>
+                                    <a href="">相关法律-</a>
+                                    <a href="">网易游戏-</a>
+                                    <a href="">联系我们-</a>
+                                    <a href="">商务合作-</a>
+                                    <a href="">加入我们</a>
+                                </div>
+                                <div class="footer-main-top2">
+                                    <span>
+                                        网易公司版权所有
+                                        &copy;1997-2019 &nbsp; &nbsp; &nbsp; &nbsp;
+                                    </span>
+                                    <a href="#">
+                                        中国网络游戏版权保护联盟举报中心
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nie-cn-part2">
+                            <p>本游戏适合16岁以上的玩家进入。</p>
+                            <p>积极健康的游戏心态是健康游戏的开端，本游戏故事情节设置紧凑，请您合理控制游戏时间，避免沉溺游戏影响生活，注意自我保护，防范网络陷阱。</p>
+                            <span>《网络文化经营许可证》</span>
+                            <span>粤网文【2017】6527-1578号</span>
+                            <a href="https://game.16163.com/report/" target="_blank">违法及不良信息举报中心</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="game-main w">
+                <div class="client-box fl">
+                    <div style="height: 18px;padding: 26px 70px; ">
+                        <p class="client-tit">客户端游戏</p>
+                    </div>
+                    <div class="client-main">
+                        <div class="client-main-fl fl">
+                            <div class="client-main-fl-tit">角色扮演</div>
+                            <div>
+                                <ul class="fl">
+                                    <li>
+                                        <a target="_blank" href="http://xyq.163.com/?from=nietop">梦幻西游电脑版</a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="http://xy2.163.com/?from=nietop">大话2经典版</a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="http://tx3.163.com/?from=nietop">天下3</a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="http://xqn.163.com/?from=nietop">新倩女幽魂</a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="http://n.163.com/?from=nietop">逆水寒</a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="http://tia.163.com/?from=nietop">泰亚史诗</a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="http://dh2.163.com/?from=nietop">大话2免费版</a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="http://ty.163.com/?from=nietop">天谕</a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="http://fight.163.com/?from=nietop">超激斗梦境</a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="http://long.163.com/?from=nietop">龙魂时刻</a>
+                                    </li>
+                                </ul>
+                                <ul class="fr">
+                                    <li>
+                                        <a target="_blank" href="http://xy3.163.com/?from=nietop">新大话3经典版</a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="http://x3.163.com/?from=nietop">新大话3免费版</a>
+                                    </li>
+                                    <li><a target="_blank" href="http://zmq.163.com/?from=nietop">镇魔曲</a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="http://zw.163.com/?from=nietop">镇魔曲页游</a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="http://dtws2.163.com/?from=nietop">大唐无双</a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="http://wh2.163.com/?from=nietop">武魂2</a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="http://www.warcraftchina.com/?from=nietop">魔兽世界</a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="http://www.diablo3.com.cn/?from=nietop">暗黑破坏神3</a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="http://ff.163.com/?from=nietop">新飞飞</a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="http://jl.163.com/?from=nietop">精灵传说</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="client-main-fr fr">
+                            <div class="client-main-fl-tit">竞技/休闲</div>
+                            <ul class="fl">
+                                <li>
+                                    <a target="_blank" href="http://xyq.163.com/?from=nietop">梦幻西游电脑版</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="http://xy2.163.com/?from=nietop">大话2经典版</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="http://tx3.163.com/?from=nietop">天下3</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="http://xqn.163.com/?from=nietop">新倩女幽魂</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="http://n.163.com/?from=nietop">逆水寒</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="http://tia.163.com/?from=nietop">泰亚史诗</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="http://dh2.163.com/?from=nietop">大话2免费版</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="http://ty.163.com/?from=nietop">天谕</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="http://fight.163.com/?from=nietop">超激斗梦境</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="http://long.163.com/?from=nietop">龙魂时刻</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile-box fl">
+                    <div style="height: 18px;padding: 26px 0px;">
+                        <p class="mobile-tit">手机游戏</p>
+                    </div>
+                    <div class="mobile-main">
+                        <div class="mobile-main-fl fl"  style=" border-left: 1px solid #eeeeee;">
+                            <div class="mobile-main-fl-tit">热门推荐</div>
+                            <ul class="fl">
+                                <li>
+                                    <a target="_blank" href="http://xyq.163.com/?from=nietop">梦幻西游电脑版</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="http://xy2.163.com/?from=nietop">大话2经典版</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="http://tx3.163.com/?from=nietop">天下3</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="http://xqn.163.com/?from=nietop">新倩女幽魂</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="http://n.163.com/?from=nietop">逆水寒</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="http://tia.163.com/?from=nietop">泰亚史诗</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="http://dh2.163.com/?from=nietop">大话2免费版</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="http://ty.163.com/?from=nietop">天谕</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="http://fight.163.com/?from=nietop">超激斗梦境</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="http://long.163.com/?from=nietop">龙魂时刻</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mobile-main-fl fl">
+                            <div class="mobile-main-fl-tit">新品推荐</div>
+                            <ul>
+                                <li>
+                                    <a target="_blank" href="http://xyq.163.com/?from=nietop">梦幻西游电脑版</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="http://xy2.163.com/?from=nietop">大话2经典版</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="http://tx3.163.com/?from=nietop">天下3</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="http://xqn.163.com/?from=nietop">新倩女幽魂</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="http://n.163.com/?from=nietop">逆水寒</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="http://tia.163.com/?from=nietop">泰亚史诗</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="http://dh2.163.com/?from=nietop">大话2免费版</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="http://ty.163.com/?from=nietop">天谕</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="http://fight.163.com/?from=nietop">超激斗梦境</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="http://long.163.com/?from=nietop">龙魂时刻</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mobile-main-fr fr">
+                            <ul style="margin-left: 50px">
+                                <li>
+                                    <a target="_blank" href="http://xyq.163.com/?from=nietop">梦幻西游电脑版</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="http://xy2.163.com/?from=nietop">大话2经典版</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="http://tx3.163.com/?from=nietop">天下3</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="http://xqn.163.com/?from=nietop">新倩女幽魂</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="http://n.163.com/?from=nietop">逆水寒</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="http://tia.163.com/?from=nietop">泰亚史诗</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="http://dh2.163.com/?from=nietop">大话2免费版</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="http://ty.163.com/?from=nietop">天谕</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="http://fight.163.com/?from=nietop">超激斗梦境</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="http://long.163.com/?from=nietop">龙魂时刻</a>
+                                </li>
+                            </ul>
+                            <ul style="margin-left: 50px">
+                                <li>
+                                    <a target="_blank" href="http://xyq.163.com/?from=nietop">梦幻西游电脑版</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="http://xy2.163.com/?from=nietop">大话2经典版</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="http://tx3.163.com/?from=nietop">天下3</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="http://xqn.163.com/?from=nietop">新倩女幽魂</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="http://n.163.com/?from=nietop">逆水寒</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="http://tia.163.com/?from=nietop">泰亚史诗</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="http://dh2.163.com/?from=nietop">大话2免费版</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="http://ty.163.com/?from=nietop">天谕</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="http://fight.163.com/?from=nietop">超激斗梦境</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="http://long.163.com/?from=nietop">龙魂时刻</a>
+                                </li>
+                            </ul>
+                            <ul style="margin-left: 50px">
+                                <li>
+                                    <a target="_blank" href="http://xyq.163.com/?from=nietop">梦幻西游电脑版</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="http://xy2.163.com/?from=nietop">大话2经典版</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="http://tx3.163.com/?from=nietop">天下3</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="http://xqn.163.com/?from=nietop">新倩女幽魂</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="http://n.163.com/?from=nietop">逆水寒</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="http://tia.163.com/?from=nietop">泰亚史诗</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="http://dh2.163.com/?from=nietop">大话2免费版</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="http://ty.163.com/?from=nietop">天谕</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="http://fight.163.com/?from=nietop">超激斗梦境</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="http://long.163.com/?from=nietop">龙魂时刻</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+    <script>
+        Vue.component("my-a", {
+            data() {
+                return {
+                    img_url: [
+                        "https://tym.res.netease.com/pc/gw/20190731141011/img/item-1_15f182a1.png",
+                        "https://tym.res.netease.com/pc/gw/20190731141011/img/item-2_37070f39.png",
+                        "https://tym.res.netease.com/pc/gw/20190731141011/img/item-3_3472dcb0.png",
+                        "https://tym.res.netease.com/pc/gw/20190731141011/img/item-4_b2408830.png"
+                    ]
+                }
+            },
+            template: "#aaa",
+        })
+
+        new Vue({
+            el: "#app"
+        })
+    </script>
+</body>
+
+</html>

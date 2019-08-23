@@ -1,0 +1,47 @@
+ @font-face{
+     font-family: "iconfont";
+     src:url(font/iconfont.svg),
+     url(font/iconfont.eot),
+     url(font/iconfont.ttf),
+     url(font/iconfont.woff2),
+     url(font/iconfont.woff);
+    }
+    div{
+     font-family: "iconfont";
+    }
+    html,body{
+     	width: 100%;
+     	height: 100%;
+     }
+             
+     body{
+        /*position: relative;*/
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+     }
+     #top{
+        width: 100%;
+        height: 40px;
+     }          
+     header{
+        width: 100%;
+        height: 88px;
+        display: flex;
+        flex-direction:row;
+        /*justify-content: center;*/
+        align-items: center;
+        background: #161618;
+
+     }
+     .h1{
+        font-size: 34px;
+        /*color: #fff;*/
+        margin-right: 190px;
+     }
+     .h2{
+         width: 38px;
+         height: 38px;
+         margin-right: 20px;
+     }

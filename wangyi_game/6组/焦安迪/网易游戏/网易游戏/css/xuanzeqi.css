@@ -1,0 +1,138 @@
+/* .bc{
+    width: 600px;
+    height: 600px;
+    border: 2px solid red;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    /* row 横着排 从左到右  */
+   
+    /*横着排 从右到左 */
+     
+    /* 通过父级 控制子级排布的方向 */
+
+/* .a1{
+    width: 50px;
+    height: 50px;
+    border: 2px solid red;
+}
+.a2{
+    width: 50px;
+    height: 50px;
+    border: 2px solid red;
+}
+.a3{
+    width: 50px;
+    height:50px;
+    border: 2px solid red;
+} */ 
+/* #q1{
+    width: 700px;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    flex-direction: 
+
+}
+.zuqiuxianchang{
+    width: 200px;
+    height: 66px;
+    border-bottom: 5px solid transparent;
+    font-size: 26px;
+    line-height: 66px;
+    text-align: center;
+}
+.zuqiuxianchang:hover{
+    border-bottom: 5px solid green;
+}
+#redian{
+    width: 640px;
+    height: 88px;
+    background: #0dc441;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: 
+}
+.re{
+    width: 121px;
+    height: 47px;
+    background: #64d985;
+    font-size: 23PX;
+    line-height: 47px;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.guan{
+    width: 114px;
+    height: 47px;
+    background: #3dd067;
+    font-size: 23PX;
+    line-height: 47px;
+    text-align: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+} */
+#box{
+    width: 700px;
+    height: 700px;
+    border: 1px solid green;
+    display: flex;
+    
+    justify-content:spa;
+    align-items;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background: red;
+}
+
+
+
+attr属性
+属性选择器 div[属性名]   div[属性名 属性值];
+div[class^=""]        “^”单词以什么什么开头
+div[class$=""]    "$"单词以什么什么结尾
+div[class*=""]    "*"包含  单词中有没有相同的
+div[class~=""]    "~"也是包含 但看的是类名 不是单词 类名中有没有相同的
+div[class|=""]    "|"完全是类名 也可以是此类名开头的
+结构选择器
+#box .box:nth-child(第几个)  子级 孩子
+#box .box:nth-last-child(倒数第几个)
+#box .box:first-child(第1个)
+#box .box:last-child(倒数第1个)
+#box .box:first-of-type(所有相同元素中 不同的标签中的第一个)
+#box .box:last-of-type(最后一个)
+#box .box:nth-of-type(第几个)
+#box .box:nth-last-of-type(倒数第几个)
+目标伪类选择器
+target被指向
+div:target{
+a标签跳转用
+}
+input:disabled{
+input标签用
+}
+div：selection{当文字被选中是 背景色 文字颜色}
+动态伪类选择器
+focus 获取焦点 光标在该元素上 样式的变化
+input：focus{
+    color:red;
+}
+层级选择器
+子选择器 ：父级>子级。
+#box>div  
+相邻兄弟选择器：平级之间
+#box+div   和#box相邻的第一个弟弟
+#box~div   和#box相邻的所有弟弟们
+
+以前不兼容css3的时候：
+优雅降级    先高版本 后考虑兼容
+渐进增强    先兼容 后高版本
+
+弹性盒
+display: flex;
+
+ju

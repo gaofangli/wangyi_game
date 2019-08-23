@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/index1.css" />
+  </head>
+
+  <body>
+    <header>
+      <main class="main">
+        <div class="left">
+          <div class="text">≡≡≡ 游戏全目录</div>
+          <div class="neibu">
+            <img src="../images/neibu.png" alt="" class="neiimg" />
+          </div>
+        </div>
+        <a href="">
+          <img src="../images/wang1.png" alt="" class="center" />
+        </a>
+        <div class="right">游戏充值七元优惠</div>
+      </main>
+    </header>
+    <nav id="topbox" style="display:block">
+      <div class="main">
+        <img src="../images/wang1.png" alt="" class="logo" />
+        <img src="../images/vip.png" alt="" class="vipimg" />
+        <a href="" class="nav1 fl">首页</a>
+        <a href="huiyuan.html" class="nav2 fl">会员权益</a>
+        <!-- <div class="nav3 fl">帮助及问题解答</div> -->
+        <a href="reai.html" class="nav3 fl">游戏爱好者</a>
+
+        <a href="mengceng.html" class="down fr">立即下载</a>
+      </div>
+    </nav>
+    <div id="topbox1" style="display:none">
+      <div class="main">
+        <img src="../images/wang1.png" alt="" class="logo" />
+        <img src="../images/vip.png" alt="" class="vipimg" />
+        <!-- <div class="nav1 fl">首页</div> -->
+        <a href="" class="nav1 fl">首页</a>
+        <a href="huiyuan.html" class="nav2 fl">会员权益</a>
+        <!-- <div class="nav3 fl">帮助及问题解答</div> -->
+        <a href="reai.html" class="nav3 fl">游戏爱好者</a>
+        <a href="mengceng.html" class="down fr">立即下载</a>
+      </div>
+    </div>
+    <section>
+      <div class="main">
+        <img src="../images/wang2.jpg" alt="" class="dimg" />
+        <div class="box">
+          <img src="../images/wang3.png" alt="" class="tu1" />
+          <div class="box2">
+            游戏热爱者必备
+          </div>
+          <div class="text1">网易游戏</div>
+          <div class="text1">会员APP</div>
+          <div class="text2">马上下载收货游戏成长红利</div>
+          <div class="text3">领积分、兑周边、享折扣、玩新游</div>
+          <div class="text4">玩网易游戏，就先下了再说</div>
+          <img src="../images/wang4.png" alt="" />
+        </div>
+        <div class="kuang">
+          <img src="../images/wang5.png" alt="" class="xiaimg" />
+          <div class="botu" id="waikuang">
+            <div class="botu1" id="ul">
+              <img src="../images/lun1.png" alt="" class="lunimg" />
+              <img src="../images/lun2.png" alt="" class="lunimg" />
+              <img src="../images/lun3.png" alt="" class="lunimg" />
+              <img src="../images/lun1.png" alt="" class="lunimg" />
+            </div>
+            <div id="zuo">⇦</div>
+            <div id="you">⇨</div>
+          </div>
+          <div class="dingbox" id="dingbox">
+            <p class="dingp1">积分</p>
+            <p class="dingp1">周边</p>
+            <p class="dingp1">新游</p>
+            <p class="dingp1">公益</p>
+          </div>
+          <img src="../images/wang7.png" alt="" class="endding" />
+        </div>
+        <div id="sec1">
+          <p class="p1">网易游戏超级会员</p>
+          <p class="p2">全年福利供给，珍稀道具、游戏礼包让你玩的更爽</p>
+          <p class="p3">开通超级会员，专享10大权益</p>
+          <p class="p4">
+            俱乐部VIP5、VIP6会员，则自动升级为网易大会员，享受网易旗下5大业务的VIP服务
+          </p>
+        </div>
+        <div id="sec2">
+          <div class="texthd">最新玩家活动</div>
+          <div class="santu">
+            <img src="../images/w1.jpg" alt="" class="tu1" />
+            <img src="../images/w2.jpg" alt="" class="tu2" />
+            <img src="../images/w3.jpg" alt="" class="tu1" />
+          </div>
+          <div id="footer">
+            <img src="../images/end1.png" alt="" class="fl endtu1" />
+            <img src="../images/wang1.png" alt="" class="fl endtu2" />
+            <p class="endwei fl">
+              公司简介 - 客户服务 - 相关法律 - 网易游戏 - 联系我们 - 商务合作 -
+              加入我们
+            </p>
+            <p class="endwei fl">
+              网易公司版权所有 ©1997-2019 中国网络游戏版权保护联盟举报中心
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      var topbox = document.getElementById("topbox");
+      var topbox1 = document.getElementById("topbox1");
+
+      window.onscroll = function() {
+        var dis = document.documentElement.scrollTop;
+        if (dis > 55) {
+          topbox1.style.display = "block";
+        } else {
+          topbox.style.display = "block";
+          topbox1.style.display = "none";
+        }
+      };
+
+      //自动轮播
+      var ul = document.getElementById("ul");
+      var waikuang=document.getElementById('waikuang')
+      var dingbox=document.getElementById('dingbox')
+      var i = 0;
+      function move(ele, dir, end) {
+        clearInterval(ele.timer);
+        if (dir === "left") {
+          ele.timer = setInterval(function() {
+            ele.style.left = ele.offsetLeft - 3 + "px";
+            if (ele.offsetLeft <= end) {
+              clearInterval(ele.timer);
+              ele.style.left = end + "px";
+            }
+          });
+        } else if (dir === "right") {
+          ele.timer = setInterval(function() {
+            ele.style.left = ele.offsetLeft + 3 + "px";
+            if (ele.offsetLeft >= end) {
+              clearInterval(ele.timer);
+              ele.style.left = end + "px";
+            }
+          });
+        }
+      }
+      var dong=null;
+      dong=setInterval(function () {
+         if (i >= 3) {
+           ul.style.left = 0;
+           i = 0;
+         }
+         i++;
+         move(ul, "left", -420 * i);
+       }, 2000);
+      waikuang.onmouseover=function(){
+        clearInterval(dong);
+      }
+      waikuang.onmouseout = function () {
+         dong = setInterval(function () {
+          if (i >= 3) {
+            ul.style.left = 0;
+            i = 0;
+          }
+          i++;
+          move(ul, "left", -420 * i);
+        }, 2000);
+      }
+      waikuang.onmouseover = function () {
+          clearInterval(dong);
+        }
+
+      //点击左右轮播
+      var zuo = document.getElementById("zuo");
+      var you = document.getElementById("you");
+      var k = 0;
+      zuo.onclick = function() {
+        if (k >= 3) {
+          ul.style.left = 0;
+          k = 0;
+        }
+        k++;
+        move(ul, "left", -420 * k);
+      };
+      you.onclick = function() {
+        if (k <= 0) {
+          ul.style.left = "-1260px";
+          k = 3;
+        }
+        k--;
+        move(ul, "right", -420 * k);
+      };
+
+      //页码点击
+      
+      var dingbox=document.getElementsByClassName("dingp1")
+      console.log(dingbox)
+      for(let b=0;b<dingbox.length;b++){
+          dingbox[b].onclick=function(){
+            move(ul, b > i ? "left" : "right", -420 * b);
+            i=b;
+            for(var c=0;c<dingbox.length;c++){
+                dingbox[c].style.color='#b2b2b2';
+                dingbox[c].style.borderBottom='2px solid transparent';
+                
+            }
+
+            dingbox[i].style.color="#f77b7a";
+            dingbox[i].style.borderBottom = '2px solid #f77b7a';
+          }
+      }
+      //页码跟随
+        for(var d=0;d<dingbox.length;d++){
+          if(dingbox[d].style.left<=-420*d){
+            dingbox[d].style.color = "#f77b7a";
+            dingbox[d].style.borderBottom = '2px solid #f77b7a';
+          }
+          
+        }
+
+
+    
+    </script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+.biankuang{
+	width: 500px;
+	height: 500px;
+	border:20px solid #7083d6;
+	border-image:url(../images/border.png) 10 10 10 10 round;
+	background: url(../images/c1.jpg) no-repeat 12px 12px;
+	background-size: cover;
+	box-shadow: 0px 1px 20px 5px #7083d6;
+}
+.biankuang{
+	
+}
+ css 新属性
+    border-color:颜色 上右下左
+    border-image:url(路径) 26 26 26 26 stretch拉伸  repeat不拉伸但重叠 round围四周；.biankuang{
+	
+ border-radius: 40px 40px 70px 70px/20px 30px 10pc 40px;
+
+ background-origin:border-box  padding-box content-box;
+背景图片起始位置   
+
+background-clip: 背景图片可以显示的区域  border-box  padding-box content-box
+background-size:300px 200px;
+background-size:cover;全部铺满
+background-size:contain;宽或高  一边铺满即可
+background:url(),url();用逗号链接 引入多张背景图片 有前后关系
+box-shadow:0px 0px 0px 0px red;盒子的阴影  可以多阴影重合
+text-shadow:0px 0px 0px 0px red;文字的阴影 可以多阴影重合

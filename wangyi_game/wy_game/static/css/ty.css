@@ -1,0 +1,278 @@
+#app{
+    width: 100%;
+    height: 100%;
+}
+.ty_game{
+    width: 1364px;
+    min-height: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+.ty_top{
+    height: 55px;
+    width: 100%;
+    display: flex;
+    background: #fff
+
+}
+.game_path{
+    width: 179px;
+    height: 55px;
+    background:#cf1132;
+    text-align: center;
+
+}
+.game_path_menu{
+    font-family: "iconfont";
+    padding-right: 5px;;
+}
+.game_path span{
+    color:#fff;
+    height: 55px;
+    line-height: 55px;
+    font-size: 12px;
+}
+.ty_top img{
+    margin-left: 450px;
+    width: 133px;
+    height: 55px;
+}
+.ty_top a{
+    width: 133px;
+    height: 55px;
+}
+.game_bg{
+    position: absolute;
+    left: 0px;
+    top: 55px;
+    width: 1364px;
+}
+.game_bg img{
+    width: 1364px;
+}
+.el-carousel{
+    margin-top: 220px;
+}
+.el-carousel__arrow {
+    position: absolute;
+    top: 37%;
+}
+.el-carousel__indicators {
+    position: absolute;
+    bottom: 240px;
+   left: 47%;
+}
+.el-carousel__button{
+    width: 10px;
+    height: 10px;
+    border-radius:5px;
+    background: #bcc1df
+}
+.arousel{
+    height:767px;
+    overflow: hidden;
+}
+.el-carousel__mask {
+    width: 100%;
+    background-color: #FFF;
+    opacity: .24;
+    -webkit-transition: .2s;
+    transition: .2s;
+}
+.el-carousel__item, .el-carousel__mask {
+    height:85%;
+}
+/* 游戏列表 */
+.game-main{
+    height:450px;
+    background: #272a2c;
+    position: absolute;
+    left: 50px;
+    top: 55px;
+    z-index:33;
+    display: none;
+}
+.game-main .client-box{
+    height:450px;
+    height:100%;
+    position: relative;
+}
+.game-main .client-box .client-tit{
+    width: 100%;
+    height: 18px;
+    line-height: 18px;;
+    font-size: 18px;
+    text-indent: 30px;
+    border-left: 3px solid#cf0f32;
+    color: #cf0f32;
+    font-weight: 900;
+}
+.game-main .client-main{
+    width: 100%;
+    height:330px;
+}
+.game-main .client-main .client-main-fl{
+    width: 230px;
+    height: 100%;
+    padding: 0px 35px;
+}
+.game-main .client-main-fl-tit{
+    font-size: 12px;
+    height: 60px;
+    line-height: 60px;
+    color:#c21d35;
+    font-weight: 900;
+
+}
+.game-main .client-main .client-main-fl li{
+    height: 24px;
+    line-height: 24px;
+    color:#666666;
+}
+.game-main .client-main .client-main-fl li a{
+    height: 24px;
+    line-height: 24px;
+    font-size: 12px;
+    color:#666666;
+}
+.game-main .client-main .client-main-fr{
+    width: 110px;
+    padding-left: 35px;
+    height: 100%;
+}
+.game-main .client-main .client-main-fr li{
+    height: 24px;
+    line-height: 24px;
+    color:#666666;
+}
+.game-main .client-main .client-main-fr li a{
+    height: 24px;
+    line-height: 24px;
+    font-size: 12px;
+    color:#666666;
+}
+.game-main .client-game-main .mobile-box{
+    width: 813px;
+    height:100%;
+}
+.game-main  .mobile-box .mobile-tit{
+    width: 100%;
+    height: 18px;
+    line-height: 18px;;
+    font-size: 18px;
+    text-indent: 30px;
+    border-left: 3px solid#cf0f32;
+    color: #cf0f32;
+    font-weight: 900;
+}
+.game-main .mobile-main-fl-tit{
+    font-size: 12px;
+    height: 60px;
+    line-height: 60px;
+    color:#c21d35;
+    font-weight: 900;
+
+}
+.game-main .mobile-main-fl {
+    padding-left: 35px;
+    width: 134px;
+}
+.mobile-main-fl li{
+    height: 24px;
+    line-height: 24px;
+    color:#666666;
+}
+.game-main .mobile-main-fl li a{
+    height: 24px;
+    line-height: 24px;
+    font-size: 12px;
+    color:#666666;
+}
+.game-main .mobile-main-fr{
+    height:400px;
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-around;
+}
+.game-main .mobile-main-fr li{
+    height: 24px;
+    line-height: 24px;
+    color:#666666;
+}
+.game-main .mobile-main-fr li a{
+    height: 24px;
+    line-height: 24px;
+    font-size: 12px;
+    color:#666666;
+}
+.footer{
+    width:100%;
+    height:193px;
+    background-color: #fff;
+}
+.footer .footer-main{
+    height: 100%;
+    position: relative;
+}
+.footer .footer-main .footer-main-txt{
+    padding-left: 195px;
+    padding-top: 35px;
+    height:158px;
+}
+.footer-main-top{
+    height: 50px;
+    width: 700px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.footer-main-topfl{
+    width: 200px;
+    height:31px;
+    display: flex;
+}
+.footer-main-topfl a{
+    width: 101px;
+    height:31px;
+    display: inline-block;
+}
+.footer-main-topfl a .img1{
+    width: 101px;
+    height:31px;
+    display: inline-block;
+}
+
+.footer-main-top1,.footer-main-top2{
+    padding-left: 48px;
+}
+.footer-main-topfr .footer-main-top1 a{
+    font-size: 12px;
+    color: #747474;
+}
+.footer-main-topfr .footer-main-top1 a:hover{
+    text-decoration: underline;
+}
+.footer-main-topfr .footer-main-top2 a{
+    font-size: 12px;
+    color: #747474;
+}
+.footer-main-topfr .footer-main-top2 span{
+    font-size: 12px;
+    color: #747474;
+}
+.footer-main-topfr .footer-main-top2 a:hover{
+    text-decoration: underline;
+}
+
+.nie-cn-part2 p{
+    color:#333;
+    font-size: 12px;
+}
+.nie-cn-part2 span{
+    color:#333;
+    font-size: 12px;
+}
+.nie-cn-part2 a{
+    color:#333;
+    font-size: 12px;
+}

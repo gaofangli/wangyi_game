@@ -1,0 +1,281 @@
+ @font-face{
+     font-family: "iconfont";
+     src:url(font/iconfont.svg),
+     url(font/iconfont.eot),
+     url(font/iconfont.ttf),
+     url(font/iconfont.woff2),
+     url(font/iconfont.woff);
+    }
+    div{
+     font-family: "iconfont";
+    }
+    html,body{
+     	width: 100%;
+     	height: 100%;
+     
+     }          
+     body{
+     	width: 100%;
+     	height: 100%;
+     	display: flex;
+     	flex-direction: column;
+     }
+     #top{
+          width: 100%;
+          height: 48px;
+          background: #161618;
+     }
+      header{
+          width: 100%;
+          height: 176px;
+          background: #161618;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+     }
+     .daohang{
+        width: 100%;
+        height:82px;
+        display: flex;
+        flex-direction: row-reverse;
+        /*justify-content: flex-end;*/
+        align-items: center;
+         background: url(../images/tubiao8.png) no-repeat 23px 15px;
+     }
+     .tubiao7{
+        width: 43px;
+        height: 43px;
+        margin-right: 24px;
+     }
+     .tuijian{
+        width: 558px;
+        height: 81px;
+         margin-right: 24px;
+         display: flex;
+         flex-direction: row;
+         justify-content: flex-start;
+         align-items: center;
+         overflow: auto;
+        
+
+     }
+     .tuijian1{
+        height: 81px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-right: 55px;
+        flex-shrink: 0;
+     }
+     .baishe{
+        font-size: 30px;
+        line-height: 81px;
+        color: #999999;
+        margin-bottom: 
+        
+     }
+     .baishe:hover{
+       color: #0bbe06;
+     }
+     .baishe1{
+        width: 24px;
+          height: 6px;
+          border-radius: 5px;
+          background: #0bbe06;
+          position: absolute;
+          bottom: 11px;
+          left: 50%;
+          margin-left:-12px; 
+          display: none;
+     }
+     .tuijian1:hover .baishe1{
+        display: block;
+        
+     }
+     .sousuo{
+        flex-grow: 1;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+     }
+     .sousuo1{
+        width: 442px;
+        height: 57px;
+        border-radius: 40px;
+        background: #2c2c2c;
+        display: flex;
+        flex-direction:row;
+     }
+     .shuru{
+        text-align: center;
+        width: 351px;
+        height: 57px;
+        font-size: 25px;
+        line-height: 57px;
+        color: #999999;
+        border-top-left-radius: 40px;
+        border-bottom-left-radius: 40px;
+     }
+     .shuru1{
+        width: 91px;
+        height: 57px;
+        background: #19ca14 url(../images/tubiao10.png) 28px 15px no-repeat;
+        border-top-right-radius: 40px;
+        border-bottom-right-radius: 40px;
+     }
+     nav{
+        width: 100%;
+        height: 376px;
+     }
+     .lunbotu{
+        width: 100%;
+        height: 376px;
+     }
+     section{
+        width: 100%;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        overflow: auto;
+     }
+     .wenxue{
+        width: 100%;
+        height: 264px;
+        border-bottom: 1px solid #f0f0f0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-content: space-around;
+        flex-wrap: wrap;
+     }
+     .wenxue1{
+        width: 127px;
+        height: 56px;
+        border-radius: 40px;
+        background: #f9f9f9;
+        flex-shrink: 0;
+        font-size: 23px;
+        line-height: 56px;
+        text-align: center;
+        color: #333333;
+     }
+     .wenxue2{
+         width: 127px;
+        height: 56px;
+        border-radius: 40px;
+        flex-shrink: 0;
+     }
+     .huodong{
+        width: 100%;
+        height: 104px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+     }
+     .huodong1{
+        width: 142px;
+        height: 48px;
+        border-radius: 40px;
+        background: #fff6eb;
+        font-size: 24px;
+        line-height: 48px;
+        color:#ff6023; 
+        text-align: center;
+        font-weight: bold;
+        margin-right: 25px;
+        margin-left: 25px;
+     }
+     .liulang{
+        width: 530px;
+        height: 28px;
+        border-left: 2px solid #f0f0f0;
+        padding-left: 25px;
+     }
+     .xushengen{
+        font-size: 28px;
+        line-height: 28px;
+        color: #666666;
+        float: left;
+     }
+     .tubiao11{
+        width: 29px;
+        height: 28px;
+        float: right;
+     }
+     .shengyin{
+        width: 100%;
+        height: 670px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 50px;
+     }
+     .shengyin1{
+        width: 375px;
+        height: 334px;
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: flex-start;
+     }
+     .tupian2{
+        width: 375px;
+        height: 215px;
+        margin-bottom: 20px;
+     }
+     .baoxian{
+        width: 317px;
+        height: 65px;
+
+     }
+     .baoxian1{
+        font-size: 28px;
+        line-height: 28px;
+        color: #333333;
+        margin-bottom: 15px;
+     }
+     .baoxian2{
+        font-size: 23px;
+        line-height: 23px;
+        color: #999999;
+     }
+     footer{
+          width: 100%;
+          height: 98px;
+           background: #f6f7f7;
+           display: flex;
+           flex-direction: row;
+           align-items: center;
+           justify-content: space-around;
+     }
+     .tuijian5{
+          width: 128px;
+          height: 99px;
+          display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+     }
+     .wode{
+          width: 128px;
+          height: 53px;
+     }
+     .wode1{
+          font-size: 20px;
+          line-height: 20px;
+          color: #707070;
+         
+     }
+     .wode2{
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+     }
+

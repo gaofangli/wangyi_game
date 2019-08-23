@@ -1,0 +1,33 @@
+/* 所有标签样式 */
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    font-weight: normal;
+}
+/* 去掉li前面的点 */
+ul,ol,li{
+    list-style: none;
+}
+/* 版心宽度和居中 */
+.w{
+    width: 1326px;
+    margin: 0 auto;
+}
+/* 右浮动 */
+.fr{
+    float: right;
+}
+/* 左浮动 */
+.fl{
+    float: left;
+}
+/* 去掉a下划线 */
+a{
+    text-decoration: none;
+}
+/* 去掉外边线三像素以及去掉边框线 */
+input{
+    outline: none;
+    border: none;
+}
